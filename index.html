@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두번째 페이지</title>
+    <style>
+        .box-title {
+            margin: 0 0 4px 0;
+            box-sizing: border-box;
+        }
+        .comments-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 8px;
+        }
+        .comment-box {
+            display: flex;
+            flex-direction: column;
+        }
+        .comment-box textarea {
+            resize: both;
+        }
+    </style>
+</head>
+<body>
+    <h4 class="box-title" id="bufferTitle">창문입니다. 창문 안에 텍스트?그림?이 있습니다.</h4>
+    <textarea name="buffer" id="bufferBox" readonly>
+        ...
+        ...
+    </textarea>
+
+    <div class="comments-wrap">
+        <div class="comment-box">
+            <h5 class="box-title" id="title1">첫번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments1" id="box1">
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⡁⢁⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡁⠄⠠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣂⢄⣁⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡅⠄⡀⡆⠀⠀⠀⠀⠀⡠⢄⠤⣀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠠⠀⡆⢠⢒⢕⢑⡮⡚⡪⡚⡒⡭⣢⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡃⠈⠄⡇⢸⡢⢅⢷⡨⡊⣳⠛⢵⣳⢘⢧⣀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠄⠡⠀⡯⡑⡅⡣⡗⡳⣌⠆⡇⢏⢢⠱⡸⡐⣕
+                ⡠⠂⢲⡀⠀⠀⠀⠀⠀⠀⠀⢈⠐⠈⠐⣧⡱⡨⠢⡛⣮⢪⡫⡺⣚⢖⢯⢑⢵⠜
+                ⠸⡨⢁⠲⡀⠀⠀⠀⠀⠀⠀⢀⠂⡁⠂⡗⠹⠭⠳⢳⢌⢓⢝⢚⢚⠍⡆⢕⠌⣇
+                ⠀⢸⣔⠼⠓⡀⠀⠀⠀⠀⠀⣐⡠⣐⡀⠇⠀⠀⠀⢹⣪⣢⣱⣸⣺⡪⣜⣔⡱⡜
+                ⠀⠀⢆⠠⠁⠡⠀⠀⠠⢂⠑⠀⠄⠠⠈⠑⢄⠀⢀⠣⡈⢪⠊⠀⠀⠉⠒⠑⠉⠀
+                ⠀⠀⠈⠆⢈⠈⢥⠠⢺⣀⠄⢁⠂⢁⠈⣐⠼⡀⢎⢐⢨⠊⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠈⠆⠐⠀⢇⢒⠄⠍⡂⡃⡃⠍⡂⡅⡜⡐⡐⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠘⠬⣐⣈⢆⠑⠥⠆⢆⠦⠕⠊⡰⠡⠂⣜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⢈⠠⠰⡐⢅⠓⠒⢌⠢⢂⠒⠍⡫⢑⠉⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠐⢤⢸⠸⡐⠨⠨⡐⠨⠠⠡⡁⣇⠅⠐⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠨⡜⢬⠠⠡⡁⠢⠡⠡⡁⡂⡂⡭⣩⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⢙⡢⢍⣒⠪⠨⠬⠢⠒⣒⠩⣢⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠐⡌⡑⠢⠭⠭⠬⠍⠭⡂⠫⢰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠈⠢⠥⣑⢨⡠⣡⠡⠬⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  
+ 
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title2">두번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments2" id="box2">
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⡁⢁⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡁⠄⠠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣂⢄⣁⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡅⠄⡀⡆⠀⠀⠀⠀⠀⡠⢄⠤⣀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠠⠀⡆⢠⢒⢕⢑⡮⡚⡪⡚⡒⡭⣢⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡃⠈⠄⡇⢸⡢⢅⢷⡨⡊⣳⠛⢵⣳⢘⢧⣀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠄⠡⠀⡯⡑⡅⡣⡗⡳⣌⠆⡇⢏⢢⠱⡸⡐⣕
+                ⡠⠂⢲⡀⠀⠀⠀⠀⠀⠀⠀⢈⠐⠈⠐⣧⡱⡨⠢⡛⣮⢪⡫⡺⣚⢖⢯⢑⢵⠜
+                ⠸⡨⢁⠲⡀⠀⠀⠀⠀⠀⠀⢀⠂⡁⠂⡗⠹⠭⠳⢳⢌⢓⢝⢚⢚⠍⡆⢕⠌⣇
+                ⠀⢸⣔⠼⠓⡀⠀⠀⠀⠀⠀⣐⡠⣐⡀⠇⠀⠀⠀⢹⣪⣢⣱⣸⣺⡪⣜⣔⡱⡜
+                ⠀⠀⢆⠠⠁⠡⠀⠀⠠⢂⠑⠀⠄⠠⠈⠑⢄⠀⢀⠣⡈⢪⠊⠀⠀⠉⠒⠑⠉⠀
+                ⠀⠀⠈⠆⢈⠈⢥⠠⢺⣀⠄⢁⠂⢁⠈⣐⠼⡀⢎⢐⢨⠊⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠈⠆⠐⠀⢇⢒⠄⠍⡂⡃⡃⠍⡂⡅⡜⡐⡐⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠘⠬⣐⣈⢆⠑⠥⠆⢆⠦⠕⠊⡰⠡⠂⣜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⢈⠠⠰⡐⢅⠓⠒⢌⠢⢂⠒⠍⡫⢑⠉⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠐⢤⢸⠸⡐⠨⠨⡐⠨⠠⠡⡁⣇⠅⠐⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠨⡜⢬⠠⠡⡁⠢⠡⠡⡁⡂⡂⡭⣩⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⢙⡢⢍⣒⠪⠨⠬⠢⠒⣒⠩⣢⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠐⡌⡑⠢⠭⠭⠬⠍⠭⡂⠫⢰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠈⠢⠥⣑⢨⡠⣡⠡⠬⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title3">세번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments3" id="box3">
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⡁⢁⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡁⠄⠠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣂⢄⣁⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡅⠄⡀⡆⠀⠀⠀⠀⠀⡠⢄⠤⣀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠠⠀⡆⢠⢒⢕⢑⡮⡚⡪⡚⡒⡭⣢⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡃⠈⠄⡇⢸⡢⢅⢷⡨⡊⣳⠛⢵⣳⢘⢧⣀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠄⠡⠀⡯⡑⡅⡣⡗⡳⣌⠆⡇⢏⢢⠱⡸⡐⣕
+                ⡠⠂⢲⡀⠀⠀⠀⠀⠀⠀⠀⢈⠐⠈⠐⣧⡱⡨⠢⡛⣮⢪⡫⡺⣚⢖⢯⢑⢵⠜
+                ⠸⡨⢁⠲⡀⠀⠀⠀⠀⠀⠀⢀⠂⡁⠂⡗⠹⠭⠳⢳⢌⢓⢝⢚⢚⠍⡆⢕⠌⣇
+                ⠀⢸⣔⠼⠓⡀⠀⠀⠀⠀⠀⣐⡠⣐⡀⠇⠀⠀⠀⢹⣪⣢⣱⣸⣺⡪⣜⣔⡱⡜
+                ⠀⠀⢆⠠⠁⠡⠀⠀⠠⢂⠑⠀⠄⠠⠈⠑⢄⠀⢀⠣⡈⢪⠊⠀⠀⠉⠒⠑⠉⠀
+                ⠀⠀⠈⠆⢈⠈⢥⠠⢺⣀⠄⢁⠂⢁⠈⣐⠼⡀⢎⢐⢨⠊⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠈⠆⠐⠀⢇⢒⠄⠍⡂⡃⡃⠍⡂⡅⡜⡐⡐⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠘⠬⣐⣈⢆⠑⠥⠆⢆⠦⠕⠊⡰⠡⠂⣜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⢈⠠⠰⡐⢅⠓⠒⢌⠢⢂⠒⠍⡫⢑⠉⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠐⢤⢸⠸⡐⠨⠨⡐⠨⠠⠡⡁⣇⠅⠐⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠨⡜⢬⠠⠡⡁⠢⠡⠡⡁⡂⡂⡭⣩⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⢙⡢⢍⣒⠪⠨⠬⠢⠒⣒⠩⣢⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠐⡌⡑⠢⠭⠭⠬⠍⠭⡂⠫⢰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠀⠀⠈⠢⠥⣑⢨⡠⣡⠡⠬⠊⠁⠀
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title4">네번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments4" id="box4">
+                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⠖⠚⠉⠉⠀⠀⠀⠀⠉⠉⠙⠒⠤⣄⡀⠀⠀⣀⣠⣤⣀⡀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠖⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢯⡀⠀⠀⠀⠉⠳⣄⠀
+⠀⠀⣀⠤⠔⠒⠒⠒⠦⢤⣀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⢠⣤⣄⠀⠀⠀⠀⠀⣴⢶⣄⠀⠀⠀⠉⢢⡀⠀⠀⠀⠘⡆
+⢠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠈⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟⠀⢹⣧⠀⠀⠀⠀⣿⠀⢹⣇⠀⠀⠀⠀⠙⢦⠀⠀⠀⣧
+⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣦⣼⣿⡇⠀⠀⠀⢿⣿⣿⣿⡄⠀⠀⠀⠀⠈⢳⡀⢀⡟
+⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡿⠿⠿⣿⠀⠀⠀⠘⣿⡛⣟⣧⠀⠀⠀⠀⠀⠀⢳⠞⠀
+⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣷⡄⢴⡿⠀⠀⠀⠀⠘⣿⣷⡏⠀⢀⡠⠤⣄⠀⠀⣇⠀
+⠀⢳⡀⠀⠀⠀⠀⠀⠀⢠⠏⠀⠀⠀⠀⠀⣠⠄⠀⠀⠀⠀⠀⠈⠛⠛⠁⣀⡤⠤⠤⠤⢌⣉⠀⠀⢠⡀⠀⠀⡱⠀⢸⡄
+⠀⠀⠙⠦⣀⠀⠀⠀⣰⠋⠀⠀⠀⠀⠀⠸⣅⠀⠀⢀⡀⠀⠀⠀⢀⠴⠋⠀⠀⠀⠀⠀⠀⠈⠳⣄⠀⠈⠉⠉⠀⠀⢘⣧
+⠀⠀⠀⠀⠈⠙⢲⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁⠀⠀⠀⣰⣋⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠀⠀⢐⣿
+⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠉⠙⠒⢤⣀⠀⠀⠈⣇⠀⠀⠀⠀⠀⣿
+⠀⠀⠀⠀⠀⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄⠀⢸⠀⠀⠀⠀⢠⡏
+⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡆⠘⣧⠀⠀⠀⣸⠀
+⠀⠀⠀⠀⠀⠀⠀⡟⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⢰⠏⠀⠀⢠⠇⠀
+⠀⠀⠀⠀⠀⠀⢸⠁⠘⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼⣸⠀⠀⢀⠏⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⠀⠀⠘⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⣣⠃⠀⣠⠏⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠈⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠘⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠞⡱⠋⢀⡴⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠈⠣⣄⠀⠀⠀⠀⠀⠀⠀⠹⣄⠀⠀⠀⠀⢀⣀⡤⠖⢋⡠⠞⢁⡴⠋⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠸⡄⠀⠀⠀⠀⠀⠀⠈⠙⠢⣄⡀⠀⠀⠀⠀⠈⠙⠯⠭⢉⠡⠤⠴⠒⣉⠴⠚⠁⠀⢰⠃⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢹⠖⠲⠤⠤⠤⠤⠤⠤⢶⡖⠚⠉⠀⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠲⠤⠤⠤⠤⠔⠋⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢤⡀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠑⠒⠒⠋⠂⠐⠒⠀⠀⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title5">다섯번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments5" id="box5">
+                .................
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title6">여섯번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments6" id="box6">
+                .................
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title7">일곱번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments7" id="box7">
+                .................
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title8">여덟번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments8" id="box8">
+                .................
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title9">아홉번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments9" id="box9">
+                .................
+            </textarea>
+        </div>
+        <div class="comment-box">
+            <h5 class="box-title" id="title10">열번째 네모입니다.</h5>
+            <textarea cols="26" rows="6" name="comments10" id="box10">
+                .................
+            </textarea>
+        </div>
+    </div>
+
+    <script>
+        // 텍스트 상자 크기가 바뀔 때마다 위쪽 제목 폭을 같이 맞춰주는 함수
+        function syncTitleWidthToBox(titleEl, boxEl) {
+            const ro = new ResizeObserver(entries => {
+                for (const entry of entries) {
+                    const width = entry.borderBoxSize
+                        ? entry.borderBoxSize[0].inlineSize
+                        : entry.contentRect.width;
+                    titleEl.style.width = width + 'px';
+                }
+            });
+            ro.observe(boxEl, { box: 'border-box' });
+        }
+
+        syncTitleWidthToBox(document.getElementById('bufferTitle'), document.getElementById('bufferBox'));
+        syncTitleWidthToBox(document.getElementById('title1'), document.getElementById('box1'));
+        syncTitleWidthToBox(document.getElementById('title2'), document.getElementById('box2'));
+        syncTitleWidthToBox(document.getElementById('title3'), document.getElementById('box3'));
+        syncTitleWidthToBox(document.getElementById('title4'), document.getElementById('box4'));
+        syncTitleWidthToBox(document.getElementById('title5'), document.getElementById('box5'));
+        syncTitleWidthToBox(document.getElementById('title6'), document.getElementById('box6'));
+        syncTitleWidthToBox(document.getElementById('title7'), document.getElementById('box7'));
+        syncTitleWidthToBox(document.getElementById('title8'), document.getElementById('box8'));
+        syncTitleWidthToBox(document.getElementById('title9'), document.getElementById('box9'));
+        syncTitleWidthToBox(document.getElementById('title10'), document.getElementById('box10'));
+    </script>
+</body>
+</html>
